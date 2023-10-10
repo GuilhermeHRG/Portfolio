@@ -1,0 +1,243 @@
+/* Reset CSS para eliminar margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --base-fundo: linear-gradient(to bottom, #06038B, black);
+    --base-fundo-dark: black;
+}
+
+/* Define a altura do corpo e o plano de fundo com gradiente */
+body {
+    height: 100%;
+    background-color: var(--base-fundo-dark);
+    background-size: 100%;
+}
+
+/* Define estilos para o conteúdo principal */
+.main {
+    display: flex;
+    background: var(--base-fundo);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.main img {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+.main p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 10px;
+}
+.text p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: row;
+    text-align: center;
+    margin: 50px;
+    animation: text-animation 3s infinite;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.mainB{
+    display: flex;
+    background-color: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+}
+
+sectionB img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: #06038B;
+    image-rendering: optimizeQuality;
+    height: 50%;
+    border: 2px solid; 
+    border-radius: 10px;
+    animation: anim-sobre 2s infinite;
+} 
+
+.mainB p{
+    display: flex;
+    color: aliceblue;
+    font-size: 20px;
+    text-transform: uppercase;
+    animation: anim-sobretxt 2s infinite;
+}
+sectionB{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    width: 100%;
+    color: aliceblue;
+}
+sectionB h1{
+    text-transform: uppercase;
+}
+sectionB p{
+    background-color:#06038B;
+    border-radius: 10px;
+    margin: 7px;
+    height: 50%;
+    padding: 10px;
+}
+sectionB hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    width: 80%;
+    height: 1px;
+    background-color: #3498db;
+}
+sectionC hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+sectionC img{
+    display: flex;
+    padding: 12px;
+    width: 10%;
+    flex-direction: column;
+}
+sectionD{
+    display: flex;
+    flex-direction: row;
+}
+sectionDC{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    columns: 2;
+}
+/* Estilos para a tela de saudação */
+#transicao-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Fundo preto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Certifique-se de que este elemento esteja na parte superior */
+    opacity: 1;
+    animation: fade-out 2s ease-in-out 2s forwards; /* Efeito de transição da tela de saudação */
+}
+
+/* Estilos para o elemento de carregamento (pode ser um ícone, uma animação, etc.) */
+
+
+/* Animação de desaparecimento da tela de saudação */
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        display: none; /* Oculta a tela de saudação quando a animação termina */
+    }
+}
+
+/* Estilos para a saudação */
+#saudacao {
+    color: white; /* Cor do texto */
+    font-size: 36px; /* Tamanho da fonte */
+    margin: 20px; /* Margem interna */
+}
+
+/* Estilos para o conteúdo principal */
+.main {
+    display: none; /* Oculta o conteúdo principal inicialmente */
+}
+
+/* Estilos para o texto na página principal */
+.text p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: row;
+    text-align: center;
+    margin: 10px;
+    animation: text-animation 3s infinite;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/* animações */
+
+@keyframes text-animation {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes anim-sobre {
+    0%{
+        border-color: #06038B;
+    }
+    50%{
+        border-color:aliceblue;
+    }
+    100%{
+        border-color: #06038B;
+    }
+}
+    @keyframes anim-sobretxt {
+        0%{
+            color: #3498db;
+        }
+        50%{
+            color:aliceblue;
+        }
+        100%{
+            color: #3498db;
+        }
+}
