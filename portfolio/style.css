@@ -83,6 +83,7 @@ sectionB img {
     color: aliceblue;
     font-size: 20px;
     text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     animation: anim-sobretxt 2s infinite;
 }
 sectionB{
@@ -91,6 +92,7 @@ sectionB{
     text-align:left;
     width: 100%;
     color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
 }
 sectionB h1{
     text-transform: uppercase;
@@ -132,12 +134,201 @@ sectionD{
     display: flex;
     flex-direction: row;
 }
+sectionC p{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
 sectionDC{
     display: flex;
     flex-direction: column;
     gap: 10px;
     columns: 2;
 }
+
+.logos {
+    display: flex;
+    padding: 10px;
+    padding-left: 5px;
+    gap: 20px;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circles {
+    display: flex;
+    gap: 5px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+.allSkills{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    flex-direction: column;
+    background-color: #31353f;
+}
+.html {
+    background-color: #f06529; /* Cor dos círculos HTML */
+    animation: anim-skill 3s infinite;
+}
+
+.css {
+    background-color: #254bdd; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.java{
+    background-color: #dd2525; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.C{
+    background-color: #25b8dd; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.sql{
+    background-color: #25dd4d; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.js{
+    background-color: #d8d50b; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.contato{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 40px;
+    padding: 10px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+.contato img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+
+}
+.Dcurriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-changing-button {
+
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    animation: anim-button2 5s infinite;
+}
+
+.color-changing-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: anim-button 10s infinite;
+    z-index: -1;
+}
+form{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#31353f;
+    margin: 20px;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+ }
+ input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 8px;
+ }
+.inputs textarea{
+    display: flex;
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+    height: 80px;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.inputs p{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    margin-left: 25px;
+    color: #ffffff;
+}
+.creditos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    background-color:#06038B;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 /* Estilos para a tela de saudação */
 #transicao-screen {
     position: fixed;
@@ -145,7 +336,7 @@ sectionDC{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000; /* Fundo preto */
+    background-color: #fff; /* Fundo preto */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,22 +345,6 @@ sectionDC{
     animation: fade-out 2s ease-in-out 2s forwards; /* Efeito de transição da tela de saudação */
 }
 
-/* Estilos para o elemento de carregamento (pode ser um ícone, uma animação, etc.) */
-
-
-/* Animação de desaparecimento da tela de saudação */
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 0;
-        display: none; /* Oculta a tela de saudação quando a animação termina */
-    }
-}
 
 /* Estilos para a saudação */
 #saudacao {
@@ -200,11 +375,88 @@ sectionDC{
 
 
 
+/* Animação de desaparecimento da tela de saudação */
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        display: none; /* Oculta a tela de saudação quando a animação termina */
+    }
+}
+
+
+
+
+
+@keyframes anim-button2 {
+    0% {
+        
+        color:white
+        
+        
+    }
+    25% {
+        
+        color: black
+    }
+    50% {
+        
+        color: white
+    }
+    75%{
+        
+        color: black
+    }
+    100%{
+        
+        color: white
+    }
+}
+@keyframes anim-button {
+    0% {
+        left: -100%;
+        background: linear-gradient(to right, #3498db, #ffffff);
+        
+        
+    }
+    25% {
+        left: 100%;
+        background: linear-gradient(to right, #fff, #3498db);
+    }
+    50% {
+        left: -100%;
+        background: linear-gradient(to right, #3498db, #fff);
+    }
+    75%{
+        left: 100%;
+        background: linear-gradient(to right, #fff, #3498db);
+    }
+    100%{
+        left: -100%;
+        background: linear-gradient(to right, #3498db, #fff);
+    }
+}
 
 
 
 
 /* animações */
+@keyframes anim-skill {
+    0%{
+        border-color: #000000;
+    }
+    50%{
+        border-color:aliceblue;
+    }
+    100%{
+        border-color: #000000;
+    }
+}
 
 @keyframes text-animation {
     0% {
