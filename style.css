@@ -1,0 +1,497 @@
+/* Reset CSS para eliminar margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --base-fundo: linear-gradient(to bottom, #06038B, black);
+    --base-fundo-dark: black;
+}
+
+/* Define a altura do corpo e o plano de fundo com gradiente */
+body {
+    height: 100%;
+    background-color: var(--base-fundo-dark);
+    background-size: 100%;
+}
+
+/* Define estilos para o conteúdo principal */
+.main {
+    display: flex;
+    background: var(--base-fundo);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.main .player_avatar, .main .profile_avatar {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 50%;
+    
+}
+
+.main p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 10px;
+}
+.text p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: row;
+    text-align: center;
+    margin: 50px;
+    animation: text-animation 3s infinite;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.mainB{
+    display: flex;
+    background-color: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+}
+
+sectionB img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: #06038B;
+    image-rendering: optimizeQuality;
+    height: 50%;
+    border: 2px solid; 
+    border-radius: 10px;
+    animation: anim-sobre 2s infinite;
+} 
+
+.mainB p{
+    display: flex;
+    color: aliceblue;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: anim-sobretxt 2s infinite;
+}
+sectionB{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    width: 100%;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+sectionB h1{
+    text-transform: uppercase;
+}
+sectionB p{
+    background-color:#06038B;
+    border-radius: 10px;
+    margin: 7px;
+    height: 50%;
+    padding: 10px;
+}
+sectionB hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    width: 80%;
+    height: 1px;
+    background-color: #3498db;
+}
+sectionC hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+sectionC img{
+    display: flex;
+    padding: 12px;
+    width: 10%;
+    flex-direction: column;
+}
+sectionD{
+    display: flex;
+    flex-direction: row;
+}
+sectionC p{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+sectionDC{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    columns: 2;
+}
+
+.logos {
+    display: flex;
+    padding: 10px;
+    padding-left: 5px;
+    gap: 20px;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circles {
+    display: flex;
+    gap: 5px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+.allSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    flex-direction: column;
+    background-color: #31353f;
+}
+.html {
+    background-color: #f06529; /* Cor dos círculos HTML */
+    animation: anim-skill 3s infinite;
+}
+
+.css {
+    background-color: #254bdd; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.java{
+    background-color: #dd2525; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.C{
+    background-color: #25b8dd; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.sql{
+    background-color: #25dd4d; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.js{
+    background-color: #d8d50b; /* Cor dos círculos CSS */
+    animation: anim-skill 3s infinite;
+}
+.contato{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 40px;
+    padding: 10px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+.contato img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+
+}
+.Dcurriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-changing-button {
+
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    animation: anim-button2 5s infinite;
+}
+
+.color-changing-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: anim-button 10s infinite;
+    z-index: -1;
+}
+form{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#31353f;
+    margin: 20px;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+ }
+ input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 8px;
+ }
+.inputs textarea{
+    display: flex;
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+    height: 80px;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.inputs p{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    margin-left: 25px;
+    color: #ffffff;
+}
+.creditos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    background-color:#31353f;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilos para a tela de saudação */
+#transicao-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Fundo preto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Certifique-se de que este elemento esteja na parte superior */
+    opacity: 1;
+    animation: fade-out 2s ease-in-out 2s forwards; /* Efeito de transição da tela de saudação */
+}
+
+
+/* Estilos para a saudação */
+#saudacao {
+    color: white; /* Cor do texto */
+    font-size: 36px; /* Tamanho da fonte */
+    margin: 20px; /* Margem interna */
+}
+
+/* Estilos para o conteúdo principal */
+.main {
+    display: none; /* Oculta o conteúdo principal inicialmente */
+}
+
+/* Estilos para o texto na página principal */
+.text p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: row;
+    text-align: center;
+    margin: 10px;
+    animation: text-animation 3s infinite;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+/* Animação de desaparecimento da tela de saudação */
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        display: none; /* Oculta a tela de saudação quando a animação termina */
+    }
+}
+
+
+
+
+
+@keyframes anim-button2 {
+    0% {
+        
+        color:white
+        
+        
+    }
+    25% {
+        
+        color: black
+    }
+    50% {
+        
+        color: white
+    }
+    75%{
+        
+        color: black
+    }
+    100%{
+        
+        color: white
+    }
+}
+@keyframes anim-button {
+    0% {
+        left: -100%;
+        background: linear-gradient(to right, #34db74, #34db74);
+    }
+    25% {
+        left: 100%;
+        background: linear-gradient(to right, #34db74, #34db74);
+    }
+    50% {
+        left: -100%;
+        background: linear-gradient(to right, #34db74, #34db74);
+    }
+    75%{
+        left: 100%;
+        background: linear-gradient(to right, #34db74, #34db74);
+    }
+    100%{
+        left: -100%;
+        background: linear-gradient(to right, #34db74, #34db74);
+    }
+}
+
+
+
+
+/* animações */
+@keyframes anim-skill {
+    0%{
+        border-color: #000000;
+    }
+    50%{
+        border-color:aliceblue;
+    }
+    100%{
+        border-color: #000000;
+    }
+}
+
+@keyframes text-animation {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes anim-sobre {
+    0%{
+        border-color: #06038B;
+    }
+    50%{
+        border-color:aliceblue;
+    }
+    100%{
+        border-color: #06038B;
+    }
+}
+    @keyframes anim-sobretxt {
+        0%{
+            color: #3498db;
+        }
+        50%{
+            color:aliceblue;
+        }
+        100%{
+            color: #3498db;
+        }
+}
