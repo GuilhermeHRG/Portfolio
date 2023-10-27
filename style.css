@@ -215,9 +215,9 @@ sectionDC{
     flex-direction: column;
     padding: 10px;
     border-color:2px solid #ddd;
-    background-color: #4c4adf8e;
+    background: var(--base-fundo);
 }
-.projeto p {
+.projeto h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -276,6 +276,7 @@ sectionDC{
     flex-direction: row;
     margin-left: 40px;
     padding: 10px;
+    
 }
 h1{
     display: flex;
@@ -326,6 +327,30 @@ h1{
     animation: anim-button 10s infinite;
     z-index: -1;
 }
+.container{
+    position:  relative;
+}
+#overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Valor alto para garantir que fique sobreposta a outros elementos */
+}
+
+.mensagem {
+    background-color: rgb(255, 196, 2);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
 form{
     display: flex;
     width: 80%;
@@ -337,6 +362,8 @@ form{
     padding: 10px;
     border-radius: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: var(--base-fundo-reverse);
+    background-size: cover;
     
  }
  input{
@@ -346,17 +373,22 @@ form{
     border-radius: 5px;
     padding: 8px;
  }
-.inputs textarea{
-    display: flex;
-    border-radius: 8px;
-    padding: 10px;
-    width: 90%;
-    height: 80px;
-}
+
 input[type="submit"]{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 50px;
     text-transform: uppercase;
+}
+textarea{
+    display: flex;
+    width: auto;
+    height: 6rem;
+    border-radius: 6px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .button{
     display: flex;
@@ -365,7 +397,7 @@ input[type="submit"]{
     margin: 10px;
     padding: 10px;
 }
-.inputs p{
+.inputs h2{
     display: flex;
     justify-self: center;
     align-items: center;
@@ -476,25 +508,25 @@ input[type="submit"]{
 @keyframes anim-button {
     0% {
         left: -100%;
-        background: linear-gradient(to right, #3498db, #ffffff);
+        background: linear-gradient(to right, #049b18, #049b18);
         
         
     }
     25% {
         left: 100%;
-        background: linear-gradient(to right, #fff, #3498db);
+        background: linear-gradient(to right, #049b18, #049b18);
     }
     50% {
         left: -100%;
-        background: linear-gradient(to right, #3498db, #fff);
+        background: linear-gradient(to right, #049b18, #049b18);
     }
     75%{
         left: 100%;
-        background: linear-gradient(to right, #fff, #3498db);
+        background: linear-gradient(to right, #049b18, #049b18);
     }
     100%{
         left: -100%;
-        background: linear-gradient(to right, #3498db, #fff);
+        background: linear-gradient(to right, #049b18, #049b18);
     }
 }
 
