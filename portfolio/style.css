@@ -60,7 +60,6 @@ body {
       background: var(--base-fundo-reverse);
       background-size: cover;
       align-items: center;
-      align-items: center;
       justify-content: space-between;
   }
   
@@ -69,11 +68,11 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 4rem;
+      padding: 5rem;
       align-items: center;
       justify-content: center;
-      width: 50%;
-      height: 50%;
+      width: 50dvh;
+      height: 50dvh;
       
   }
   .mainB p{
@@ -461,7 +460,6 @@ body {
     flex-direction: column;
     background: var(--base-fundo-reverse);
     background-size: cover;
-    align-items: center;
     align-items: center;
     justify-content: space-between;
   }

@@ -1,25 +1,65 @@
 @media only screen and (max-width: 768px){
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 3rem;
+        padding: 10px;
+        background-color: #002f64;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .navBar ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around; 
+        gap: 1rem;
+    }
+    
+    
+    .navBar button {
+        color: #fff;
+        background-color: #00000000;
+        border: none;
+        font-size: 16px;
+    }
+    
+    .navBar button:hover {
+        color: #fff;
+        border-bottom: 2px solid #00c3ff;
+        font-size: 16px;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
     .main p{
         display: flex;
-        font-size: 20px;
+        font-size: 17px;
+        background-color: #00000067;
+        width: auto;
+        justify-content: center;
+        align-items: center;
         color: aliceblue;
         padding: 10px;
     }
     strong{
-        background-color: #00aeff83;
+        background-color: #56c9ff83;
         border-radius: 20%;
         width: 30px;
         display: flex;
         align-items: center;
-        margin: 2px;
-        transform: translateY(-8px);
+        transform: translateY(-2px);
         justify-content: center;
         gap: 20px;
-        margin: 10px;
+        margin: 5px;
     }
     .text p {
         display: flex;
         align-items: center;
+        background-color: #00000000;
         justify-content: center;
         color: aliceblue;
         flex-direction: row;
@@ -34,23 +74,19 @@
         display: flex;
         flex-direction: column;
         background: var(--base-fundo-reverse);
-        background-size: cover;
+        background-size: 500px 480px;
         align-items: center;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     
     
     .mainB .player_avatar, .mainB .profile_avatar {
         display: flex;
         flex-direction: row;
+        padding: 5rem;
         align-items: center;
-        padding: 4rem;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        height: 50%;
-        
+        width: 50dvh;
+        height: 50dvh;
     }
     .mainB p{
         display: flex;
@@ -69,7 +105,11 @@
         font-family: 'Times New Roman', Times, serif;
     }
     sectionB h1{
+        margin: 10px;
         text-transform: uppercase;
+        width: 65dvh;
+        height: 10dvh;
+        background-color: #0000004f;
     }
     sectionB p{
         background-color:#06038B;
@@ -198,7 +238,7 @@
     }
     .projeto h2 {
         display: flex;
-        flex-wrap: wrap;
+        text-align: justify;
         justify-content: space-between;
         padding: 20px;
         background-color: #000000;
@@ -249,7 +289,7 @@
     
     .contato{
         display: flex;
-        width: 60%;
+        width: auto;
         justify-content: center;
         align-items: center;
         flex-direction: row;
@@ -270,8 +310,8 @@
         justify-content: center;
         align-items: center;
         padding: 10px;
-        width: 50px;
-        height: 50px;
+        width: auto;
+        height: auto;
     
     }
     .Dcurriculo{
@@ -307,6 +347,8 @@
         z-index: -1;
     }
     .container{
+        display: flex;
+        align-items: center;
         position:  relative;
     }
     #overlay {
@@ -321,7 +363,7 @@
     }
     
     .mensagem {
-        background-color: rgb(255, 196, 2);
+        background-color: rgb(170, 130, 0);
         color: white;
         font-weight: bold;
         font-size: 18px;
@@ -332,13 +374,12 @@
     
     form{
         display: flex;
-        width: 80%;
+        width: 37dvh;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         background-color:#31353f;
-        margin: 20px;
-        gap: 20px;
-        padding: 10px;
+        padding: auto;
         border-radius: 18px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background: var(--base-fundo-reverse);
@@ -362,7 +403,7 @@
     }
     textarea{
         display: flex;
-        width: auto;
+        width: 14rem;
         height: 6rem;
         border-radius: 6px;
         padding: 10px;
@@ -388,9 +429,12 @@
     }
     .creditos{
         display: flex;
+        max-width: 100dvh;
+        text-transform: uppercase;
+        text-align: justify;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 12px;
         color: #fff;
         background-color:#06038B;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
